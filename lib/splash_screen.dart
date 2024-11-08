@@ -13,6 +13,7 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   SharedPreferences? sharedPreferences;
 
+  //Check if any data stored in shared preference
   checkUser() async {
     sharedPreferences = await SharedPreferences.getInstance();
     var data = sharedPreferences!.getString('seyam');
